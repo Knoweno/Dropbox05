@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    Layout = null;
+}
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width = device-width" />
+    <title>All Employees</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        @Html.ActionLink("Add a new Employee.","AddEmployee")
+    </div>
+    <div>
+        <p><b>All Employees</b></p>
+
+
+        <table>
+            <tr>
+                <th>Employee Id </th>
+                <th>Employee Name </th>
+                <th>Hourly Wage</th>
+            </tr>
+            <tr>
+                <td>54321</td>
+                <td>Linda Williams</td>
+                <td>55.00</td>
+            </tr>
+            @*@foreach (var d in Model)
+            {
+            <tr>
+            <td>@d.EmployeeId</td>
+            <td>@d.EmployeeName</td>
+            <td>@d.Hourlywage</td>
+
+            </tr>
+            }*@
+        </table>
+
+
+
+    </div>
+</body>
